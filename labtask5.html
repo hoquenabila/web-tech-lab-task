@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>My Academic Profile</title>
+
+</head>
+
+<body>
+
+    
+    <header>
+        <h1>Nabila Hoque</h1>
+
+        <nav>
+            <a href=>Home</a> |
+            <a href=>Education</a> |
+            <a href=>Contact</a>
+        </nav>
+    </header>
+
+    <hr>
+
+    
+    <main>
+
+        
+        <section>
+            <h2>Biography</h2>
+
+            <p>
+                I am a Computer Science and Engineering student at American International
+                University-Bangladesh. I am interested in web development, software engineering,
+                and technology-based projects.
+            </p>
+        </section>
+
+        <hr>
+
+      
+        <section>
+            <h2>Education</h2>
+
+            <table border="1">
+
+                <caption>Educational Background</caption>
+
+                <thead>
+                    <tr>
+                        <th>Degree</th>
+                        <th>Institution</th>
+                        <th>Year</th>
+                        <th>Result</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>BSc in CSE</td>
+                        <td>AIUB</td>
+                        <td>2021 - Present</td>
+                        <td>3.40</td>
+                    </tr>
+
+                    <tr>
+                        <td>HSC</td>
+                        <td>Shaheed Police Smrity College</td>
+                        <td>2021</td>
+                        <td>GPA 5.00</td>
+                    </tr>
+
+                    <tr>
+                        <td>SSC</td>
+                        <td>Shaheed Police Smrity College</td>
+                        <td>2019</td>
+                        <td>GPA 5.00</td>
+                    </tr>
+                </tbody>
+
+            </table>
+
+        </section>
+
+        <hr>
+
+       
+        <section>
+            <h2>Contact Me</h2>
+
+            <form action="#" method="post">
+
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name"
+                       placeholder="Enter your name"
+                       required
+                       maxlength="50"><br><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email"
+                       placeholder="Enter your email"
+                       required><br><br>
+
+                <label for="phone">Phone:</label><br>
+                <input type="text" id="phone" name="phone"
+                       placeholder="01XXXXXXXXX"
+                       pattern="[0-9]{11}"
+                       maxlength="11"><br><br>
+
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message"
+                          rows="5" cols="30"
+                          placeholder="Write your message here"
+                          required
+                          maxlength="300"></textarea><br><br>
+
+                <input type="submit" value="Send">
+                <input type="reset" value="Clear">
