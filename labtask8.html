@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lab Task 8 - Box Model & Display</title>
+
+    <style>
+        body{
+            font-family: Arial;
+        }
+
+        
+        .box1{
+            width: 200px;
+            height: 100px;
+            padding: 10px;
+            border: 5px solid blue;
+            margin: 20px;
+            background-color: lightblue;
+        }
+
+        .box2{
+            width: 200px;
+            height: 100px;
+            padding: 30px;
+            border: 10px solid green;
+            margin: 40px;
+            background-color: lightgreen;
+        }
+
+        .box3{
+            width: 200px;
+            height: 100px;
+            padding: 20px;
+            border: 8px solid red;
+            margin: 10px;
+            background-color: lightcoral;
+        }
+
+        /* =======================
+           Part B: Box Sizing
+        ======================== */
+
+        .default-box{
+            width: 250px;
+            padding: 20px;
+            border: 10px solid black;
+            background-color: lightgray;
+            margin-bottom: 20px;
+        }
+
+        .border-box{
+            width: 250px;
+            padding: 20px;
+            border: 10px solid black;
+            box-sizing: border-box;
+            background-color: lightyellow;
+        }
+
+        /* =======================
+           Part C: Display Properties
+        ======================== */
+
+        .block-example{
+            display: block;
+            background-color: lightpink;
+            margin: 10px 0;
+        }
+
+        .inline-example{
+            display: inline;
+            background-color: orange;
+        }
+
+        .inline-block-example{
+            display: inline-block;
+            width: 120px;
+            height: 50px;
+            background-color: lightseagreen;
+            text-align: center;
+            line-height: 50px;
+            margin: 5px;
+        }
+
+        .none-example{
+            display: none;
+            background-color: purple;
+        }
+
+        /* =======================
+           Part D: Visibility vs Display
+        ======================== */
+
+        .visibility-hidden{
+            visibility: hidden;
+            background-color: lightblue;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h2>Part A: Box Model Demonstration</h2>
+
+    <div class="box1">Box 1</div>
+    <div class="box2">Box 2</div>
+    <div class="box3">Box 3</div>
+
+
+    <h2>Part B: Box Sizing Comparison</h2>
+
+    <div class="default-box">
+        Default box-sizing (content-box)
+    </div>
+
+    <div class="border-box">
+        box-sizing: border-box
+    </div>
+
+
+    <h2>Part C: Display Properties</h2>
+
+    <!-- Block -->
+    <p class="block-example">I am a block paragraph</p>
+
+    <!-- Inline -->
+    <span class="inline-example">Inline 1</span>
+    <span class="inline-example">Inline 2</span>
+
+    <br><br>
+
+    <!-- Inline Block -->
+    <div class="inline-block-example">Box A</div>
+    <div class="inline-block-example">Box B</div>
+
+    <!-- Display None -->
+    <div class="none-example">
+        You will not see me (display: none)
+    </div>
+
+
+    <h2>Part D: Visibility vs Display</h2>
+
+    <p class="visibility-hidden">
+        I am hidden using visibility: hidden
+    </p>
+
+    <p>
+        This text remains in its place even though the above element is hidden.
+    </p>
+
+</body>
+</html>
