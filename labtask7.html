@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LabTask 7 - CSS Units & Selectors</title>
+
+    
+    <link rel="stylesheet" href="labtask7.css">
+
+    
+    <style>
+        
+        h1, h2 {
+            color: darkblue;
+            font-family: Arial;
+        }
+
+       
+        div p {
+            color: green;
+            font-size: 1.2em;
+        }
+
+        
+        input[type="text"] {
+            border: 2px solid blue;
+            padding: 10px;
+            width: 50%;
+        }
+
+        
+        a:hover {
+            color: red;
+        }
+
+        input[type="text"]:focus {
+            background-color: lightyellow;
+        }
+
+        button:active {
+            background-color: orange;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>CSS Units Example</h1>
+    <h2>Selector Practice</h2>
+
+    <p style="font-size: 20px; color: purple;">
+        This paragraph uses inline CSS with absolute unit (px).
+    </p>
+
+    <div>
+        <p>This paragraph is inside a div. Descendant selector applied.</p>
+    </div>
+
+    <div class="box">
+        Box using cm and vh units.
+    </div>
+
+    <br>
+
+    <input type="text" placeholder="Enter your name">
+    <br><br>
+
+    <a href="#">Hover over this link</a>
+    <br><br>
+
+    <button>Click Me</button>
+
+</body>
+</html>
